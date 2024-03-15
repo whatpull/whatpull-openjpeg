@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <body>
+        테스트
+        <script>
+            var Module = {
+                print: (function() {
+                    return (...args) => {
+                        var text = args.join(' ');
+                        console.log(text);
+                    }
+                })()
+            }
+        </script>
+        <script async type="text/javascript" src="../dist/a.out.js"></script>
+    </body>
+</html>
